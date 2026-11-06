@@ -19,10 +19,6 @@ The two tasks share one encoder, and their decoders exchange information through
 
 Each direction has a learnable gate that starts at zero. Training therefore begins from the unfused network, and the learned gate values show how much each direction is actually used.
 
-![Architecture](figures/architecture.png)
-
-![Cross-task fusion module](figures/ctf_module.png)
-
 ## What is new
 
 Earlier work either denoises low-dose CT without regard to the diagnostic task (RED-CNN, CTformer, Hformer), or links a denoiser and a *separate* task network through a training loss only (LIDnet, TOD-Net). CTFusionNet places both tasks in **one network** and lets them exchange **features in both directions**, with gates that make the use of each direction measurable.
