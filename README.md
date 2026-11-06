@@ -47,16 +47,6 @@ Evaluated on the official DeepLesion test split: 1,096 slices with 1,124 lesions
 - **Fusion lowers denoising fidelity by 2.3 dB PSNR.** About half of this comes from checkpoint selection (see the paper).
 - The 1/4-scale localization→denoising gate grows from 0 to 0.96 during training.
 
-| FROC (low dose) | Comparison | Per lesion type |
-|---|---|---|
-| ![](figures/froc_low.png) | ![](figures/comparison_bars.png) | ![](figures/per_type_sensitivity.png) |
-
-![Training curves](figures/training_curves.png)
-
-![Qualitative results](figures/qualitative.png)
-
-All numbers are in [`results/`](results).
-
 ## Dataset
 
 [NIH DeepLesion](https://nihcc.app.box.com/v/DeepLesion) (Yan *et al.*, J. Med. Imaging, 2018). The notebook downloads the image archives directly from NIH and checks their MD5 checksums. We used the first **10 of 56 archives**: 6,971 key slices of 512×512 from 583 patients, with the official patient-level split. **The data are not included in this repository.** Please obtain them from NIH under their terms of use.
