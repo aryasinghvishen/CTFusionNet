@@ -1,0 +1,12 @@
+# Tested on the default Kaggle/Colab GPU images (Python 3.13, CUDA, NVIDIA T4)
+torch
+numpy
+pandas
+scipy
+scikit-image
+opencv-python-headless
+matplotlib
+tqdm
+joblib
+requests
+streamlit

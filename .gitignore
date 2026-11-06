@@ -1,0 +1,14 @@
+# data and large outputs (DeepLesion must be obtained from NIH)
+data/
+CT_Multitask_Research/
+*.zip
+*.pt
+*.pth
+cache/
+tmp_zip/
+# python / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+.DS_Store
